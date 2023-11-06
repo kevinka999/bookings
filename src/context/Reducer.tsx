@@ -24,6 +24,7 @@ export const reducer = (state: ReducerState, action: Action) => {
         rentalProperties: payload,
       };
     case ActionsType.SET_BOOKINGS:
+      localStorage.setItem("bookings", JSON.stringify(payload));
       return {
         ...state,
         bookings: payload,

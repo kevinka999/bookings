@@ -4,27 +4,27 @@ const rentalPropertiesMock: RentalProperty[] = [
   {
     id: "1SkWEjelxA1HgdXYwGOfg",
     name: "House 1",
-    picture: "house1.jpg",
+    picture: "house.jpg",
   },
   {
     id: "VrE88LqzDAhx7uOH5qOnJ",
-    name: "House 1",
-    picture: "house1.jpg",
+    name: "House 2",
+    picture: "house.jpg",
   },
   {
     id: "BKwDXVJ5O2bxKhA4xLN2J",
-    name: "House 1",
-    picture: "house1.jpg",
+    name: "House 3",
+    picture: "house.jpg",
   },
   {
     id: "bNAisr6Ci4deGyNGS5i0W",
-    name: "House 1",
-    picture: "house1.jpg",
+    name: "House 4",
+    picture: "house.jpg",
   },
   {
     id: "xSUgP4S3fq-cF8B9FZFQO",
-    name: "House 1",
-    picture: "house1.jpg",
+    name: "House 5",
+    picture: "house.jpg",
   },
 ];
 
