@@ -1,3 +1,3 @@
-export * from "./Home";
-export * from "./Manage";
-export * from "./Booking";
+export * from "./Home"
+export * from "./Manage"
+export * from "./Booking"

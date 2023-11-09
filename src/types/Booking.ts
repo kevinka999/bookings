@@ -1,12 +1,14 @@
 export interface Booking {
-  id: string;
-  rentalPropertyId: string;
-  startDate: Date;
-  endDate: Date;
+  id: string
+  rentalPropertyId: string
+  startDate: Date
+  endDate: Date
 }
 
 export interface RentalProperty {
-  id: string;
-  name: string;
-  picture: string;
+  id: string
+  name: string
+  picture: string
 }
+
+export type InputRef = HTMLInputElement | null

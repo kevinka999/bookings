@@ -1,10 +1,32 @@
+import { twMerge } from "tailwind-merge"
 import { RentalProperty } from "../types"
 
-export const PropertyCard = ({ property }: { property: RentalProperty }) => {
+interface PropertyCardProps {
+  property: RentalProperty
+  className?: string
+  children: React.ReactNode
+}
+
+export const PropertyCard = ({
+  property,
+  children,
+  className,
+}: PropertyCardProps) => {
   return (
-    <div className="bg-slate-400 p-4 flex flex-row rounded-sm">
-      <img src={property.picture} className="rounded-sm w-[200px]" alt="Rental Property"/>
-      <p>{property.name}</p>
+    <div
+      className={twMerge(
+        "flex w-full flex-col gap-4 rounded-xl bg-slate-50 p-4 shadow-md",
+        className,
+      )}
+    >
+      <img
+        src={property.picture}
+        alt="Rental Property"
+        className="h-[250px] w-full"
+      />
+      <h1 className="text-xl">{property.name}</h1>
+
+      {children}
     </div>
   )
 }
